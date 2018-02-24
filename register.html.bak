@@ -14,9 +14,9 @@
   <div class="wraper">
     <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
     <div class="reg_nav">
-       <a href="#" >国家北斗精准服务网</a> |
-       <a href="http://www.sbsm.gov.cn/" target="_blank">国家测绘地理信息局</a> |
-       <a href="http://www.cnten.com/" target="_blank">讯腾智科</a>
+       <a href="#" >XX服务网</a> |
+       <a href="http://www.sbsm.gov.cn/" target="_blank">XX信息局</a> |
+       <a href="http://www.cnten.com/" target="_blank">XX智科</a>
     </div>
   </div>
 </div>
@@ -90,10 +90,10 @@
      <a href="#" target="_blank">关于我们</a>
      <a href="javascript:void(0)" target="_blank">法律声明</a>
   </p>
-  <span>© 2004-2016 北京讯腾智慧科技股份有限公司 经营许可证：B1.B2-20130326 京ICP备12028782号-4</span>
+  <span>© 2004-2018 XX有限公司 经营许可证：XX 京XX备XX号-4</span>
 </div>
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-<script type="text/javascript" src="js/jquery.formvalidate-2.0.js"></script>
+<script type="text/javascript" src="js/jquery.formvalidate.js"></script>
 <script type="text/javascript">
 	$(function(){
 		$("#companyTempForm").validateRealTime({
