@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="css/register.css"/>
+<link rel="stylesheet" href="css/location.css"/>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="reg_head">
+  <div class="wraper">
+    <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+    <div class="reg_nav">
+       <a href="#" >XX服务网</a> |
+       <a href="http://www.sbsm.gov.cn/" target="_blank">XX信息局</a> |
+       <a href="http://www.cnten.com/" target="_blank">XX智科</a>
+    </div>
+  </div>
+</div>
+<div class="reg_con">
+<form id="companyTempForm" class="form-horizontal">
+<div class="form-group">
+		<div class="control-label"><b>登录信息</b><span>请输入你的账号和密码用于登录</span></div>
+	</div>
+	<div class="form-group">
+		<label id="userCodeLabel" for="userCode" class="col-sm-3 control-label">登录账号</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" maxlength="15" id="userCode" name="userCode" unique="/companyTemp/verifyUserCode" validateExp="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,15}$:由数字字母组成(6-15位)"  value="" maxlength="15" isNotNull placeholder="由数字字母组成(6-15位)"/>
+		</div>
+		<label id="userCodeTip" class="control-label" style="color:red">*</label>
+	</div>
+	<div class="form-group">
+		<label id="passwordLabel" for="password" class="col-sm-3 control-label">登录密码</label>
+		<div class="col-sm-6">
+			<input type="password" class="form-control" validateExp="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,15}$:由数字字母组成(6-15位)" id="password"  value="" maxlength="15" isNotNull placeholder="由数字字母组成(6-15位)"/>
+		</div>
+		<label id="passwordTip" class="control-label" style="color:red">*</label>
+	</div>
+	<div class="form-group">
+		<label id="rePasswordLabel" for="rePassword" class="col-sm-3 control-label">密码确认</label>
+		<div class="col-sm-6">
+			<input type="password" class="form-control" validateExp="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,15}$:由数字字母组成(6-15位)" id="rePassword" equalField="password:两次输入的密码不一致!"  value="" maxlength="15" isNotNull placeholder="由数字字母组成(6-15位)"/>
+		</div>
+		<label id="rePasswordTip" class="control-label" style="color:red">*</label>
+	</div>
+	<div class="form-group">
+		<label id="phoneLabel" for="phone" class="col-sm-3 control-label">注册电话</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" validateExp="(^(1\d{10})$|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)" id="phone" value="" maxlength="11" isNotNull placeholder="请输入正确的手机号码"/>
+		</div>
+		<label id="phoneTip" class="control-label" style="color:red">*</label>
+	</div>
+	<div class="form-group">
+		<label id="emailLabel" for="email" class="col-sm-3 control-label">注册邮箱</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" email-validate id="email"  value="" maxlength="35" isNotNull placeholder="例:abcxyz@mail.com"/>
+		</div>
+		<label id="emailTip" class="control-label" style="color:red">*</label>
+	</div>
+    <div class="form-group">
+		<div class="control-label"><b>企业信息</b><span>请输入真实的企业信息</span></div>
+	</div>
+	<div class="form-group">
+		<label id="companyCodeLabel" for="companyCode" class="col-sm-3 control-label">企业编码</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" maxlength="30" id="companyCode" unique=""  value="" isNotNull validateExp="^[A-Z]{4,6}$"  placeholder="由纯大写字母组成(4-6位)"/>
+		</div>
+		<label id="companyCodeTip" class="control-label" style="color:red">*</label>
+	</div>
+	<div class="form-group">
+		<label id="companyTempNameLabel" for="companyTempName" class="col-sm-3 control-label">企业名称</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" maxlength="30" id="companyTempName"  value="" isNotNull  placeholder="请输入完整准确的企业名称"/>
+		</div>
+		<label id="companyTempNameTip" class="control-label" style="color:red">*</label>
+	</div>
+</form>
+    <div class="reg_bt">
+	   <a  class="reg_ok" onclick="saveCompanyTempByPage();">
+		<span>注册</span>
+	   </a>
+   </div>
+</div>
+
+<div class="reg_footer">
+  <p>
+     <a href="#" target="_blank">关于我们</a>
+     <a href="javascript:void(0)" target="_blank">法律声明</a>
+  </p>
+  <span>© 2004-2018 XX有限公司 经营许可证：XX 京XX备XX号-4</span>
+</div>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery.formvalidate-2.0.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#companyTempForm").validateRealTime({
+			'sign' : '^.^'
+		});
+
+	})
+	function saveCompanyTempByPage(){
+		if(!$("#companyTempForm").validateForm().init()) 
+			return;
+		else 
+			alert("注册成功！正在跳转页面中...");
+	}
+
+</script>
+
+</body>
+</html>

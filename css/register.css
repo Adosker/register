@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, p, ul, li,h2,h3,h1, i, em, span, dd, dt, dl, form, table, th, td, tr, input {
+	border: 0 none;
+    margin: 0;
+    padding: 0;
+	list-style-type:none;
+}
+select{
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif; 
+	font-size: 12px; 
+	color:#121212;
+	background: url(../images/register_bg.jpg) center top no-repeat;
+	background-color:#ffffff;
+}
+body{
+	background: url(../images/register_bg.jpg) center top no-repeat;
+	background-color:#ffffff;
+}
+a{ 
+    text-decoration:none;
+	color:#333333;
+	outline:none;
+	border: none;
+}
+a:hover{ text-decoration:none;}
+img{ border:none;}
+h2,h3,h4,i,b{
+	font-weight: normal;
+	font-style: normal;
+}
+input,textarea{ font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif; outline:none;}
+
+.wrap{ width: 1200px; }
+.wraper{
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.wraping{
+	width: 100%;
+	min-width: 1200px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.ofhd{ overflow: hidden; }
+.mgat{ margin: 0 auto; }
+.hgat{ height: auto; }
+.fl{ float: left; }
+.fr{ float: right; }
+.lf{ clear: both; }
+/*头部*/
+.reg_head{
+	width:100%;
+	height:60px;
+	min-width: 1200px;
+	border-bottom: 1px #e3e3e3 solid;
+	/*background-color: rgba(255,255,255,0.2);*/
+	position: relative;
+	z-index: 999;
+}
+.logo{
+	width: 120px;
+	height: 60px;
+	overflow: hidden;
+	float: left;
+}
+.logo img{
+	height: 60px;
+}
+.reg_nav{
+	width: 600px;
+	height: 60px;
+	overflow: hidden;
+	float: right;
+	line-height: 60px;
+	vertical-align: middle;
+	text-align: right;
+}
+.reg_nav a{
+	font-size: 16px;
+	color: #333333;
+	margin: 0 5px;
+	font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif; 
+}
+/*中部*/
+.reg_con{
+	padding: 20px 60px;
+	font-size: 14px;
+	width: 800px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+.reg_con table{
+    width: 550px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: left;
+}
+.reg_con table td{
+	padding: 5px 0;
+    padding-left: 10px;
+}
+.reg_tit{
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	line-height: 36px;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	margin-top: 30px;
+}
+.reg_label{
+	display: block;
+	text-align: right;
+	font-size: 14px;
+	color: #666666;
+	line-height: 36px;
+	vertical-align: middle;
+}
+.reg_label i{
+	color: #ed0404;
+	font-weight: bold;
+	padding-right: 3px;
+}
+.reg_con table input[type="text"]{
+	width: 240px;
+	height: 34px;
+	padding: 0 10px;
+	border: 1px #e3e3e3 solid;
+	font-size: 13px;
+	line-height: 34px;
+	vertical-align: middle;
+	color: #333333;
+}
+.tell_a,.tell_b,.tell_c{
+	/*height: 36px;*/
+	overflow: hidden;
+	float: left;
+}
+.tell_a{
+	width: 152px;
+}
+.reg_con table .tell_a input{
+	width: 116px;
+}
+.tell_b{
+	width: 108px;
+	height: 34px;
+	overflow: hidden;
+	border: 1px #e3e3e3 solid;
+	font-size: 13px;
+	line-height: 34px;
+	vertical-align: middle;
+	color: #666666;
+	text-align: center;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.disabled{
+	pointer-events: none;
+	color: #cccccc;
+	cursor: auto;
+}
+.reg_con label{
+	line-height: 34px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.reg_con label input{
+	float: left;
+	margin-right: 5px;
+	margin-top: 11px;
+}
+.reg_con label a{
+	color: #2196f3;
+}
+.reg_con table input[type="submit"]{
+	width: 140px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 36px;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	background-color: #2196f3;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.reg_con table input[type="submit"].disabled{
+	background-color: #cccccc;
+	cursor: auto;
+	pointer-events: none;
+}
+/*底部*/
+.reg_footer{
+	width:100%;
+	height:auto;
+	min-width: 1200px;
+	border-top: 1px #e3e3e3 solid;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	line-height: 26px;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #999999;
+	font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif; 
+	margin-top: 20px;
+}
+.reg_footer a{
+	color: #666666;
+	font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif; 
+}
+/*新改*/
+
+.reg_con .form-horizontal .form-group{
+    /*padding: 0 300px;*/
+}
+.reg_con .form-horizontal .control-label {
+     padding-top: 0px; 
+     font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif; 
+}
+@media (min-width: 768px){
+	.reg_con .form-horizontal .control-label {
+     padding-top: 0px; 
+     font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif; 
+}
+}
+.reg_con .form-control{ border-radius: 0px; font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif;  }
+.reg_con input.isNotNull{ 
+    border-color: #ff0000;
+    box-shadow: 0px 0px 8px rgba(255,0,0,0.6);
+}
+.control-label{
+	font-weight: normal;
+}
+.control-label b{
+	width: 80px;
+	display: block;
+	text-align: left;
+	font-size: 16px;
+	color: #2577d8;
+	float: left;
+}
+.control-label span{
+	width: 420px;
+	display: block;
+	font-size: 12px;
+	color: #999999;
+	text-align: left;
+	float: left;
+}
+.form-group input.control-label{ 
+	font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif;  
+}
+
+.reg_con .form-control{
+    height: 34px;
+    padding: 2px 8px;
+}
+.reg_con .form-horizontal .control-label {
+    font-size: 14px;
+    line-height: 34px;
+}
+#companyTempForm{
+	/*background-color: #999;*/
+}
+.reg_bt{
+	height: auto;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-left: 235px;
+}
+.reg_bt a{
+	display: block;
+	width: 140px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 36px;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	background-color: #2196f3;
+	cursor: pointer;
+	text-decoration: none;
+	font-family:"Microsoft Yahei","SimHei","SimSun", Geneva, sans-serif;
+	float: left;
+	margin-right: 30px;
+}
+.reg_bt a.reg_log{
+	background-color: #ff7d00;
+}
+.reg_bt a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.isNotNull{
+	border: 1px #ff0000 solid;
+	box-shadow: 0px 0px 4px 1px rgba(255,0,0,0.3);
+}
+
